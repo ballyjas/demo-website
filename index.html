@@ -1,19 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baljinder's web-site</title>
+<head>	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="software blogs">
+	<meta name="author" content="Baljinder Singh">
+
+	<title>Home</title>
+
+	<!-- Bootstrap CSS file -->
+	<link href="lib/bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="lib/bootstrap-3.0.3/css/bootstrap-theme.min.css" rel="stylesheet" />
+	<link href="blog.css" rel="stylesheet" />
+
 </head>
+
 <body>
-    <h1>Task List</h1>
-    <p id="msg">Current tasks:</p>
-    <ul>
-      <li class="list">Add visual styles</li>
-      <li class="list">Add light and dark themes</li>
-      <li>Enable switching the theme</li>
-    </ul>
-  </body>
+
+	<!-- Header -->
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">			
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Blogs</a>
+			</div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<form class="navbar-form navbar-right" role="search">
+			      <div class="form-group">
+			        <input type="text" class="form-control" placeholder="Search">
+			      </div>
+			      <button type="submit" class="btn btn-default">Submit</button>
+			    </form>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Body -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+
+				<h1>Latest Posts</h1>
+
+				<article>
+					<h2><a href="singlepost.html">Emerging trends</a></h2>
+
+			        <div class="row">
+			          	<div class="col-sm-6 col-md-6">
+			          		<span class="glyphicon glyphicon-folder-open"></span> &nbsp;<a href="#">link 1</a>
+			          		&nbsp;&nbsp;<span class="glyphicon glyphicon-bookmark"></span> <a href="#">Some other link</a>, <a href="#">more</a>, <a href="#">more..</a>
+			          	</div>
+			          	<div class="col-sm-6 col-md-6">
+			          		<span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">20 Comments</a>			          		
+			          		&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> May 01, 2023 9:00 PM			          		
+			          	</div>
+			          </div>
+
+			          <hr>
+
+			          <img src="http://placehold.it/900x300" class="img-responsive">
+
+			          <br />
+
+			          <p class="lead"></p>
+
+			          <p></p>
+
+					  <p class="text-right">
+				          <a href="singlepost.html">
+				          	continue reading...
+				          </a>
+				      </p>
+
+			          <hr>
+				</article>
+
+				<article>
+					<h2><a href="singlepost.html">Blog title - April 20</a></h2>
+
+			        <div class="row">
+			          	<div class="col-sm-6 col-md-6">
+			          		<span class="glyphicon glyphicon-folder-open"></span> &nbsp;<a href="#">Testing</a>
+			          		&nbsp;&nbsp;<span class="glyphicon glyphicon-bookmark"></span> <a href="#">Test</a>, <a href="#">some link</a>, <a href="#">Other lik</a>
+			          	</div>
+			          	<div class="col-sm-6 col-md-6">
+			          		<span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">20 Comments</a>			          		
+			          		&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> April 30, 2023 5:00 PM			          		
+			          	</div>
+			          </div>
+
+			          <hr>
+
+			          <img src="http://placehold.it/900x300" class="img-responsive">
+
+			          <br />
+						<p class="text-right">
+							blog contents goes here...
+						</br>
+				          <a href="singlepost.html">
+				          	continue reading...
+				          </a>
+				      </p>				          
+
+			          <hr>
+				</article>
+
+									
+				<ul class="pager">
+					<li class="previous"><a href="#">&larr; Previous</a></li>
+					<li class="next"><a href="#">Next &rarr;</a></li>
+				</ul>
+
+			</div>
+			<div class="col-md-4">
+
+				<div class="well text-center">
+					<p class="lead">
+						Don't want to miss latest article
+					</p>
+					<button class="btn btn-primary btn-lg">Subscribe to my feed</button>
+				</div>
+
+				<!-- Latest Posts -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Latest Posts</h4>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item"><a href="singlepost.html">Post 1 - April 19</a></li>
+					</ul>
+				</div>
+
+				<!-- Categories -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Categories</h4>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item"><a href="#">test</a></li>
+</li>
+					</ul>
+				</div>
+
+				<!-- Tags -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Tags</h4>
+					</div>
+					<div class="panel-body">
+						<ul class="list-inline">
+							<li><a href="#">test</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+				<!-- Recent Comments -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Recent Comments</h4>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item"><a href="#">comment 1<em>Baljinder</em></a></li>
+											</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<hr />
+			<p class="text-center">&copy;baljinders.com 2023. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- Jquery and Bootstrap Script files -->
+	<script src="lib/jquery-2.0.3.min.js"></script>
+	<script src="lib/bootstrap-3.0.3/js/bootstrap.min.js"></script>
 </body>
 </html>
